@@ -318,12 +318,13 @@ document.querySelectorAll('.slick-form').forEach(form => {
         const fileName = isDriverForm ? 'Mess/Driver.txt' : 'Mess/Business.txt';
         
         // Create download link
+        /*
         const link = document.createElement('a');
         link.href = URL.createObjectURL(blob);
         link.download = fileName;
         document.body.appendChild(link);
         link.click();
-        document.body.removeChild(link);
+        document.body.removeChild(link);*/
 
 
         // Show success message
