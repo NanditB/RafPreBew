@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raftaf - Premier Service de Micromobilité en Afrique de l'Ouest</title>
+    <link rel="icon" type="image/png" href="Logo/Thumbnail Raftaf.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="progress-bar"></div>
+    
+    <!-- Navigation Arrows -->
+    <div class="section-nav">
+        <button class="section-nav-btn prev" aria-label="Previous Section">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+        <button class="section-nav-btn next" aria-label="Next Section">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Logo/logoUsed.png" alt="RAFTAF Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#home">Accueil</a>
+            <a href="#investors">Espace Particulier</a>
+            <a href="#drivers">Espace Chauffeur</a>
+            <a href="#yango">Yango Partner</a>
+            <a href="#business">Solutions Business</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>La Première Entreprise de Micromobilité en Afrique de l'Ouest</h1>
+            <p>Solutions de livraison rapide et de mobilité durable à Dakar</p>
+            <a href="#contact" class="cta-button">Commencer</a>
+        </div>
+    </section>
+
+    <section id="micromobility" class="features">
+        <h2>Notre Vision de la Micromobilité</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Leader en Afrique de l'Ouest</h3>
+                <p>Premier service de micromobilité innovant dans la région</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-school"></i>
+                <h3>Solutions E-Scooter</h3>
+                <p>Pour universités, écoles et espaces privés</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bicycle"></i>
+                <h3>Bike Sharing</h3>
+                <p>Bientôt disponible - Une nouvelle façon de se déplacer</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="investors" class="investors">
+        <h2>Espace Particulier et Investisseur</h2>
+        <div class="investors-content">
+            <div class="investors-text">
+                <h3>Rentabilisez Votre Véhicule</h3>
+                <p>Votre voiture reste immobile la plupart du temps ? Transformez-la en source de revenus !</p>
+                <ul class="benefits-list">
+                    <li><i class="fas fa-money-bill-wave"></i> Gains journaliers garantis</li>
+                    <li><i class="fas fa-shield-alt"></i> Contrat sécurisé</li>
+                    <li><i class="fas fa-handshake"></i> Chauffeurs professionnels certifiés</li>
+                    <li><i class="fas fa-chart-line"></i> Rentabilité optimisée</li>
+                </ul>
+                <button class="button toggle-form" data-form="investor-form">Devenir Partenaire</button>
+        
+                <div class="driver-form" id="investor-form">
+                    
+                    <form class="slick-form">
+                        <input type="text" name="name" placeholder="Nom complet *" required>
+                        <input type="tel" name="phone" placeholder="Téléphone *" required>
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="text" name="vehicle_model" placeholder="Modèle du véhicule *" required>
+                        <input type="text" name="vehicle_year" placeholder="Année du véhicule *" required>
+                        <select name="availability">
+                            <option value="">Disponibilité du véhicule</option>
+                            <option value="full-time">Temps plein</option>
+                            <option value="weekdays">Jours ouvrables</option>
+                            <option value="weekends">Week-ends</option>
+                            <option value="custom">Personnalisée</option>
+                        </select>
+                        <textarea name="additional_info" placeholder="Informations supplémentaires"></textarea>
+                        <p class="form-note">* Champs obligatoires</p>
+                        <button type="submit" class="button">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+            <div class="investors-stats">
+                <div class="stat-card">
+                    <i class="fas fa-car"></i>
+                    <h4>Gain Journalier</h4>
+                    <p class="stat-value">7 500 FCFA</p>
+                    <p class="stat-desc">En moyenne par véhicule</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar-check"></i>
+                    <h4>Disponibilité</h4>
+                    <p class="stat-value">Flexible</p>
+                    <p class="stat-desc">Selon vos besoins</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-file-contract"></i>
+                    <h4>Contrat</h4>
+                    <p class="stat-value">Sécurisé</p>
+                    <p class="stat-desc">Assistance téléphonique </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="drivers" class="drivers">
+        <h2>Espace Chauffeur</h2>
+        
+        <!-- Carousel Section -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="Images/Livraison pro.jpg" alt="Raftaf Delivery">
+                    <div class="slide-content">
+                        <h3>Rejoignez l'équipe Raftaf</h3>
+                        <p>Rejoignez notre équipe de coursiers professionnels</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="Images/Jeune boy.jpg" alt="Raftaf Riders">
+                    <div class="slide-content">
+                        <h3>Flexibilité Totale</h3>
+                        <p>Etudiant? Chauffeur? Choisissez vos horaires et maximisez vos revenus</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="Images/Regulariser vous.jpg" alt="Raftaf Fleet">
+                    <div class="slide-content">
+                        <h3>Véhicules immatriculés et assurés</h3>
+                        <p>Accédez à notre flotte de véhicules modernes et régularisés et éviter les tracasseries policières</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button prev">&#10094;</button>
+            <button class="carousel-button next">&#10095;</button>
+            <div class="carousel-dots"></div>
+        </div>
+
+        <div class="drivers-grid">
+            <div class="driver-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Étudiants</h3>
+                <p>Travail à temps partiel flexible pour étudiants</p>
+                <button class="button toggle-form" data-form="student-form">Postuler</button>
+                
+                <div class="driver-form" id="student-form">
+                    
+                    <form class="slick-form">
+                        <input type="text" name="name" placeholder="Nom complet *" required>
+                        <input type="tel" name="phone" placeholder="Téléphone *" required>
+                        <input type="text" id="parrain" name="parrain" placeholder="Nom du parrain">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="text" name="school" placeholder="Établissement">
+                        <select name="availability">
+                            <option value="">Disponibilité</option>
+                            <option value="morning">Matin</option>
+                            <option value="afternoon">Après-midi</option>
+                            <option value="evening">Soir</option>
+                            <option value="weekend">Week-end</option>
+                        </select>
+                        <p class="form-note">* Champs obligatoires</p>
+                        <button type="submit" class="button">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+            <div class="driver-card">
+                <i class="fas fa-car"></i>
+                <h3>Location de Véhicules</h3>
+                <p>Solutions de leasing pour démarrer sans investissement</p>
+                <button class="button toggle-form" data-form="leasing-form">En savoir plus</button>
+                
+                <div class="driver-form" id="leasing-form">
+                    
+                    <form class="slick-form">
+                        <input type="text" name="name" placeholder="Nom complet *" required>
+                        <input type="tel" name="phone" placeholder="Téléphone *" required>
+                        <input type="text" id="parrain" name="parrain" placeholder="Nom du parrain">
+                        <input type="email" name="email" placeholder="Email">
+                        <select name="vehicle_type">
+                            <option value="">Type de véhicule souhaité</option>
+                            <option value="scooter">Scooter</option>
+                            <option value="motorcycle">Moto</option>
+                            <option value="bicycle">Vélo</option>
+                        </select>
+                        <select name="duration">
+                            <option value="">Durée de location souhaitée</option>
+                            <option value="1month">1 mois</option>
+                            <option value="3months">3 mois</option>
+                            <option value="6months">6 mois</option>
+                            <option value="12months">12 mois</option>
+                        </select>
+                        <p class="form-note">* Champs obligatoires</p>
+                        <button type="submit" class="button">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+            <div class="driver-card">
+                <i class="fas fa-route"></i>
+                <h3>Coursiers Indépendants</h3>
+                <p>Augmentez vos revenus en rejoignant notre réseau</p>
+                <button class="button toggle-form" data-form="independent-form">Rejoindre</button>
+                
+                <div class="driver-form" id="independent-form">
+                    
+                    <form class="slick-form">
+                        <input type="text" name="name" placeholder="Nom complet *" required>
+                        <input type="tel" name="phone" placeholder="Téléphone *" required>
+                        <input type="text" id="parrain" name="parrain" placeholder="Nom du parrain">
+                        <input type="email" name="email" placeholder="Email">
+                        <select name="vehicle_type">
+                            <option value="">Type de véhicule possédé</option>
+                            <option value="scooter">Scooter</option>
+                            <option value="motorcycle">Moto</option>
+                            <option value="bicycle">Vélo</option>
+                        </select>
+                        <input type="text" name="license_plate" placeholder="Numéro d'immatriculation">
+                        <p class="form-note">* Champs obligatoires</p>
+                        <button type="submit" class="button">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+            <div class="driver-card">
+                <i class="fas fa-clipboard-check"></i>
+                <h3>Régularisation de Véhicules</h3>
+                <p>Rejoignez notre réseau et régularisez votre véhicule en quelques clics</p>
+                <button class="button toggle-form" data-form="regularization-form">Régulariser</button>
+        
+                <div class="driver-form" id="regularization-form">
+                    
+                    <form class="slick-form">
+                        <input type="text" name="name" placeholder="Nom complet *" required>
+                        <input type="tel" name="phone" placeholder="Téléphone *" required>
+                        <input type="text" id="parrain" name="parrain" placeholder="Nom du parrain">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="text" name="license_plate" placeholder="Numéro d'immatriculation">
+                        <select name="vehicle_type">
+                            <option value="">Type de véhicule</option>
+                            <option value="scooter">Scooter</option>
+                            <option value="motorcycle">Moto</option>
+                            <option value="bicycle">Vélo</option>
+                        </select>
+                        <textarea name="additional_info" placeholder="Informations supplémentaires"></textarea>
+                        <p class="form-note">* Champs obligatoires</p>
+                        <button type="submit" class="button">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="yango" class="yango-partner">
+        <h2>Partenaire Officiel Yango</h2>
+        <div class="yango-content">
+            <div class="yango-logo">
+                <img src="Logo/Raftaf Yango.png" alt="Raftaf Yango Partner">
+            </div>
+            <div class="qr-code">
+                <div class="qr-placeholder">
+                    <img src="Logo/Qr Whatsapp cropped.jpg" alt="qr-code" href="https://wa.me/+221788070707">
+                    <p>Scanner pour devenir Partenaire</p>
+                </div>
+            </div>
+            <div class="partner-info">
+                <h3>Yango Delivery Sénégal</h3>
+                <p>Partenaire officiel pour la livraison au Sénégal</p>
+                <a href="https://wa.me/+221788070707" class="button">Devenir Partenaire</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="business" class="business">
+        <h2>Solutions Business</h2>
+        
+        <!-- Business Carousel Section -->
+        <div class="carousel-container business-carousel">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="Images/Gestion.jpg" alt="Raftaf Business Fleet">
+                    <div class="slide-content">
+                        <h3>Gestion de Flotte Professionnelle</h3>
+                        <p>Solutions complètes pour votre entreprise</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="Images/Door.jpg" alt="Raftaf Business Delivery">
+                    <div class="slide-content">
+                        <h3>Service de Livraison Door to Door</h3>
+                        <p>Une équipe de coursiers à votre disposition</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="Images/pexels-rdne-7362959.jpg" alt="Raftaf Business App">
+                    <div class="slide-content">
+                        <h3>Application Business</h3>
+                        <p>Gérez votre flotte depuis votre smartphone</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button prev">&#10094;</button>
+            <button class="carousel-button next">&#10095;</button>
+            <div class="carousel-dots"></div>
+        </div>
+
+        <div class="business-grid">
+            <div class="business-card">
+                <i class="fas fa-motorcycle"></i>
+                <h3>Location de Véhicules</h3>
+                <p>Solutions de leasing adaptées aux entreprises</p>
+            </div>
+            <div class="business-card">
+                <i class="fas fa-users"></i>
+                <h3>Mise à Disposition de Chauffeurs</h3>
+                <p>Personnel qualifié pour votre flotte</p>
+            </div>
+            <div class="business-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Gestion de Flotte</h3>
+                <p>Optimisation et suivi de votre flotte</p>
+            </div>
+            <div class="business-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Application Raftaf Business</h3>
+                <p>Gérez votre activité depuis votre smartphone</p>
+            </div>
+        </div>
+        <div class="business-form">
+            <h3>Contactez-nous pour une solution sur mesure</h3>
+            <form id="businessForm" class="slick-form">
+                <input type="text" name="company_name" placeholder="Nom de l'entreprise *" required>
+                <input type="tel" name="phone" placeholder="Téléphone *" required>
+                <input type="email" name="email" placeholder="Email professionnel">
+                <select name="service">
+                    <option value="">Service souhaité</option>
+                    <option value="leasing">Location de Véhicules</option>
+                    <option value="drivers">Mise à Disposition de Chauffeurs</option>
+                    <option value="fleet">Gestion de Flotte</option>
+                    <option value="app">Application Raftaf Business</option>
+                </select>
+                <textarea name="message" placeholder="Votre message"></textarea>
+                <p class="form-note">* Champs obligatoires</p>
+                <button type="submit" class="button">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Ce Qu'ils Disent de Nous</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <img src="Logo Partner/Partner Yango.jpg" alt="Client Testimonial">
+                </div>
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Raftaf a révolutionné notre système de livraison. Service rapide et professionnel!"</p>
+                    <div class="testimonial-author">
+                        <h4>Abibatou Toure</h4>
+                        <p>Business Developper,Regional Support, Yango</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <img src="Logo Partner/Partner Bassour.jpg" alt="Client Testimonial">
+                </div>
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Une solution innovante qui a permis à notre entreprise d'optimiser ses livraisons."</p>
+                    <div class="testimonial-author">
+                        <h4>Mouhamadou Mansour Diagne</h4>
+                        <p>Co-Fondateur, Bassour Farms</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-image">
+                    <img src="Logo Partner/Partner Bonergie.jpg" alt="Client Testimonial">
+                </div>
+                <div class="testimonial-content">
+                    <p class="testimonial-text">"Excellent service client et une équipe très professionnelle. Hautement recommandé!"</p>
+                    <div class="testimonial-author">
+                        <h4>Maguette Thiandoume</h4>
+                        <p>CEO, Bonergie</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="partners">
+        <h2>Ils Nous Ont Fait Confiance</h2>
+        <div class="partners-grid">
+            <div class="partner-card">
+                <img src="Logo Partner/Bassour Transparent.png" alt="Bassour Logo">
+                <div class="partner-overlay">
+                    <p>BassourFarms</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <img src="Logo Partner/Wave Transparent.png" alt="Wave Logo">
+                <div class="partner-overlay">
+                    <p>Wave</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <img src="Logo Partner/Yango Logo.png" alt="Yango Delivery Logo">
+                <div class="partner-overlay">
+                    <p>Yango Pro</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <img src="Logo Partner/Daaba Logo.png" alt="Daaba Logo">
+                <div class="partner-overlay">
+                    <p>Daaba</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <img src="Logo Partner/Orange Logo.png" alt="Orange Logo">
+                <div class="partner-overlay">
+                    <p>Orange</p>
+                </div>
+            </div>
+            <div class="partner-card">
+                <img src="Logo Partner/Bonergie Logo.png" alt="Bonergie Logo">
+                <div class="partner-overlay">
+                    <p>Bonergie</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Nous Contacter</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/people/Raftaf-Senegal/61575075802607/#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/raftafsn/" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/Raftafsn" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>RAFTAF</h4>
+                <p>Premier service de micromobilité en Afrique de l'Ouest</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Tel: +221 78 807 07 07</p>
+                <p>Email: contact@raftaf.sn</p>
+                <p>Dakar, Sénégal</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens Rapides</h4>
+                <a href="#home">Accueil</a>
+                <a href="#drivers">Devenir Chauffeur</a>
+                <a href="#business">Solutions Business</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RAFTAF. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Social Media Buttons -->
+    <div class="social-buttons">
+        <a href="https://www.facebook.com/people/Raftaf-Senegal/61575075802607/#" class="social-button facebook" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/raftafsn/" class="social-button instagram" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/Raftafsn" class="social-button twitter" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.tiktok.com/@raftafsn?_t=ZM-8vSMZYDTT8v&_r=1" class="social-button tiktok" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="#" class="social-button linkedin" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+221788070707" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html> 
